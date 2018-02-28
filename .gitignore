@@ -1,3 +1,2 @@
-__pycache__/
-*.tsv
-*.checkpoint
+#ignore
+/__pycache__/*

@@ -1,0 +1,141 @@
+<!doctype html>
+<head>
+    <title>Экран покупателя - личный кабинет</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<div id="status" class="col-md-12 container">
+    {% if saved %}<div class="alert alert-success col-md-6" role="alert" >Настройки сохранены</div>{% endif %}
+    {% if recadded %}<div class="alert alert-success col-md-6" role="alert" >Рекомендация добавлена</div>{% endif %}
+    {% if recdeleted %}<div class="alert alert-success col-md-6" role="alert" > Рекомендация удалена </div> {% endif %}
+</div>
+<br>
+<div>
+    <ul class="nav nav-tabs">
+        <li  class="active"><a data-toggle="tab" href="#settings">Настройки</a></li>
+        <li  class=""><a data-toggle="tab" href="#recomendations">Рекомендации</a></li>
+        <li  class=""><a data-toggle="tab" href="#reports">Отчёты</a></li>
+    </ul>
+</div>
+<div class="tab-content col-md-12">
+<div id="settings" class="tab-pane fade in active">
+
+    <form action="/user-settings?userId={{item['userId']}}" method="POST">
+        <label class="col-md-3">Код для отчётов в Telegram:</label> <p class="form-control-static col-md-9" >{{item['telegramCode']}}</p>
+
+    <label for="adType" class="col-md-3">Тип рекламы при ожидании:</label>
+        <div class="radio col-md-9">
+            <input type="radio" name="adType" value="text" {% if item['adType'] == 'text' %} checked {% endif %}>Текст<br>
+            <input type="radio" name="adType" value="video" {% if item['adType'] == 'video' %} checked {% endif %} >Видео<br>
+            <input type="radio" name="adType" value="slideshow" {% if item['adType'] == 'slideshow' %} checked {% endif %}> Показ слайдов<br>
+    </div>
+            <b></b><br>
+    <label for="textInput" class="col-md-3">Простой рекламный текст:</label>
+    <div class="col-md-9">
+        <input name="text" id="textInput" class="form-control " size="80" value="{{item['text']}}">
+    </div>
+    <label for="adVideoUrl" class="col-md-3">Видео URL:</label>
+    <div class="col-md-9">
+    <input name="adVideoUrl" id="adVideoUrl" size="80" class="form-control col-md-9" value="{{item['adVideoUrl']}}">
+    </div>
+        <label class="col-md-3">Настройка отзывов: </label>
+        <div class="col-md-9">
+            <input type="radio" name="feedbackType" value="none" {% if item['feedbackType'] == 'none' %} checked {% endif %}>Выключены<br>
+            <input type="radio" name="feedbackType" value="smiles" {% if item['feedbackType'] == 'smiles' %} checked {% endif %} >Смайлы<br>
+            <input type="radio" name="feedbackType" value="stars" {% if item['feedbackType'] == 'stars' %} checked {% endif %}> 5 звёзд<br>
+        </div>
+        <label for="adVideoUrl" class="col-md-3">Видеофиксация продаж: </label>
+        <div class="col-md-9">
+            <input type="checkbox" name="videoFixation">
+        </div>
+    <div class="col-md-12"><input type="submit" value="Сохранить" class="btn btn-primary"><br><br>
+        </div>
+</form>
+</div>
+<div id="recomendations" class="tab-pane fade">
+
+
+    {% if recs %}
+        <table class="table-striped">
+            <tr>
+                <th>Время начала</th>
+                <th>Время окончания</th>
+                <th>Ключевые слова</th>
+                <th>Способ выбора</th>
+                <th>Текст</th>
+                <th>Коды товаров</th>
+                <th>Скидка</th>
+                <th>Действия</th>
+            </tr>
+            {% for rec in recs %}
+            <tr>
+                <td>{{rec['timestart']}}</td>
+                <td>{{rec['timeend']}}</td>
+                <td>{{', '.join(rec['keywords'])}}</td>
+                <td>{{'Все одновременно' if rec['kwmethod']=='all' else 'Одно из'}}</td>
+                <td width="30%">{{rec['text']}}</td>
+                <td>{{rec['productId']}}</td>
+                <td>{{rec['discount']}}%</td>
+                <td>
+                    <form action="/del-rec?recid={{rec['_id']}}&userId={{item['userId']}}" method="POST">
+                        <input type="submit" value="Удалить" class="btn btn-danger btn-sm">
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+    <br>
+    <b>Добавление рекомендации:</b><br>
+    <form action="/add-rec?userId={{item['userId']}}" method="POST">
+        <label for="timestart">Время начала:<br></label>
+        <input type="text" name="timestart" id="timestart" value="00:00"><br>
+        <label> Время окончания:<br></label>
+        <input type="text" name="timeend" value="00:00"><br>
+        <label>Ключевые слова (разделённые ','):</label><br>
+        <textarea name="keywords" cols="40" rows="5" value="Ham, spam, eggs"></textarea><br>
+        <label>Метод выбора: <br></label>
+        <input type="radio" name="kwmethod" value="all" checked>Все одновременно
+        <input type="radio" name="kwmethod" value="any">Одно из<br>
+        <label>Текст рекомендации:</label><br>
+        <textarea name="text" cols="40" rows="5" value="Купите к пиву орешки"></textarea><br>
+        <label>ID продуктов: </label>
+        <input type="text" name="productId" value=""><br>
+        <label>Скидка, %:</label>
+        <input type="text" name="discount" value="10"><br>
+        <input type="submit" value="Добавить рекомендацию" class="btn btn-primary"><br><br>
+    </form>
+</div>
+<div id="reports" class="tab-pane fade">
+    {% if cashiersStats %}
+
+        <table class="table-striped">
+            <tr>
+                <th>Имя кассира</th>
+                <th>Всего отзывов</th>
+                <th>Средняя оценка отзывов</th>
+            </tr>
+            {% for cashier in cashiersStats %}
+            <tr>
+                <td>
+                    {{ cashier['cashierName'] }}
+                </td>
+                <td>
+                    {{ cashier['feedbackCount'] }}
+                </td>
+                <td>
+                    {{ cashier['avarageRate'] }}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+</div>
+</div>

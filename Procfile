@@ -1,1 +1,1 @@
-web: python like_sch.py
+web: python run.py
