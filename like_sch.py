@@ -8,7 +8,8 @@ import glob             # ->added to make pics upload -> see job8
 import threading        # ->added to make multithreadening possible -> see fn run_threaded
 import logging
 
-from .instabot import Bot
+#sys.path.append(os.path.join(sys.path[0], '../'))
+from instabot import Bot
 
 import config
 import like_medias_by_location2 as lmbloc
@@ -20,7 +21,7 @@ bot = Bot(comments_file=config.COMMENTS_FILE, blacklist=config.BLACKLIST_FILE, w
 
 bot.logger = logging.getLogger('[instabot]')
 bot.logger.setLevel(logging.DEBUG)
-logging.basicConfig(format='%(asctime)s %(message)s',
+logging.basicConfig(format='%(asctime)s - %(threadName)s: %(levelname)s - %(message)s',
                     filename='instabot.log',
                     level=logging.INFO
                     )
@@ -76,6 +77,9 @@ schedule.every(1).hours.do(run_threaded, tema_geotag)              # like locati
 
 run_threaded(tema_hashtag)
 run_threaded(tema_geotag)
+
+#tema_hashtag()
+#tema_geotag()
 
 while True:
     schedule.run_pending()

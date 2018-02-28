@@ -14,7 +14,7 @@ import sys
 from tqdm import tqdm
 
 
-sys.path.append(os.path.join(sys.path[0], '../../'))
+#sys.path.append(os.path.join(sys.path[0], '../../'))
 from instabot import Bot
 
 
@@ -43,8 +43,8 @@ def like_location_feed(new_bot, new_location, amount=0, quiet=True):
 def like_first_location_feed(bot, location, amount, quiet=True):
     bot.logger.info("Looking for location %s" % location)
     bot.searchLocation(location)
-    finded_location = bot.LastJson['items'][0]
-    if finded_location:
+    if bot.LastJson['items']:
+        finded_location = bot.LastJson['items'][0]
         bot.logger.info(u"Found {}".format(finded_location['title']))
 
         like_location_feed(bot, finded_location, amount=amount, quiet=quiet)
