@@ -1,1 +1,1 @@
-web: python like_sch.py
+worker: python like_sch.py
