@@ -21,16 +21,16 @@ bot = Bot(comments_file=config.COMMENTS_FILE, blacklist=config.BLACKLIST_FILE, w
 
 bot.logger = logging.getLogger('[instabot]')
 bot.logger.setLevel(logging.DEBUG)
-logging.basicConfig(format='%(asctime)s - %(threadName)s: %(levelname)s - %(message)s',
+logging.basicConfig(format='%(asctime)s - %(levelname)s - %(threadName)s: %(message)s',
                     filename='instabot.log',
                     level=logging.INFO
                     )
-ch = logging.StreamHandler()
+ch = bot.logger.handlers[0]
 ch.setLevel(logging.DEBUG)
 formatter = logging.Formatter(
-    '%(asctime)s - %(threadName)s: %(levelname)s - %(message)s')
+    '%(asctime)s - %(levelname)s - %(threadName)s: %(message)s')
 ch.setFormatter(formatter)
-bot.logger.addHandler(ch)
+#bot.logger.addHandler(ch)
 
 bot.login(username=config.UNAME, password=config.UPASS)
 bot.logger.info("like by schedule script. 1 hour save")
