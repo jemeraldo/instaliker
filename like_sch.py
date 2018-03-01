@@ -14,11 +14,13 @@ from instabot import Bot
 import config
 import like_medias_by_location2 as lmbloc
 
+#local config
+LIKE_RANDOM = False
 
 bot = Bot(comments_file=config.COMMENTS_FILE, blacklist=config.BLACKLIST_FILE, whitelist=config.WHITELIST_FILE,
           stop_words=('shop', 'store', 'магазин', 'купить', 'заработок', 'аренда', 'заказать', 'доставка',
                       'бронирование'))
-
+                      
 bot.logger = logging.getLogger('[instabot]')
 bot.logger.setLevel(logging.DEBUG)
 logging.basicConfig(format='%(asctime)s - %(levelname)s - %(threadName)s: %(message)s',
@@ -40,6 +42,10 @@ random_hashtag_file = bot.read_list_from_file(config.HASHTAGS_FILE)
 random_locations_file = bot.read_list_from_file(config.LOCATIONS_FILE)
 photo_captions = bot.read_list_from_file(config.PHOTO_CAPTIONS_FILE)
 
+def init_counters(bot):
+    bot.ht_like_k = 0
+    bot.geo_like_k = 0
+
 
 # Return a random value from a list, used in various jobs below
 def get_random(from_list):
@@ -52,16 +58,28 @@ def stats():
 
 
 def tema_hashtag():
-    amount = int(700 / 24 / 2)
+    amount = int(700 / 24 / 4)
     bot.logger.info("like_hashtag started, amount = %s" % str(amount))
-    bot.like_hashtag(get_random(random_hashtag_file), amount=amount)
+    if LIKE_RANDOM:
+        ht = get_random(random_hashtag_file)
+    else:
+        ht = random_hashtag_file[bot.ht_like_k % len(random_hashtag_file)]
+        bot.ht_like_k+=1
+        
+    bot.like_hashtag(ht, amount=amount)
     bot.logger.info("like_hashtag job done")
 
 
 def tema_geotag():
-    amount = int(700 / 24 / 2)
+    amount = int(700 / 24 / 4)
     bot.logger.info("like_first_lication_feed started, amount = %s" % str(amount))
-    lmbloc.like_first_location_feed(bot, get_random(random_locations_file), amount=amount)
+    if LIKE_RANDOM:
+        loc = get_random(random_locations_file)
+    else:
+        loc = random_locations_file[bot.geo_like_k % len(random_locations_file)]
+        bot.geo_like_k+=1
+    
+    lmbloc.like_first_location_feed(bot, loc, amount=amount)
     bot.logger.info("like_first_lication_feed job done")
 
 
@@ -71,9 +89,10 @@ def run_threaded(job_fn):
     job_thread.start()
 
 
-schedule.every(1).hour.do(run_threaded, stats)              # get stats
-schedule.every(1).hours.do(run_threaded, tema_hashtag)              # like hashtag
-schedule.every(1).hours.do(run_threaded, tema_geotag)              # like locations
+init_counters(bot)
+schedule.every(30).minutes.do(run_threaded, stats)              # get stats
+schedule.every(30).minutes.do(run_threaded, tema_hashtag)              # like hashtag
+schedule.every(30).minutes.do(run_threaded, tema_geotag)              # like locations
 
 run_threaded(tema_hashtag)
 run_threaded(tema_geotag)
