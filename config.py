@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-UNAME = "temaluck"
-UPASS = "laertsky"
+UNAME = "ggg"
+UPASS = "ggg"
 
 BLACKLIST_FILE = "blacklist.txt"  # List of the users you don't want to follow
 
