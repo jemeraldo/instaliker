@@ -38,6 +38,13 @@ def get_list_locs_by_coords(self, lat, lng, city='', distance_limit=50):
     locs = get_loc_by_coords(self, lat, lng, city=city, distance_limit=distance_limit)
     for loc in locs:
         print(loc['location']['short_name'])
+
+def get_nearest_locs(self, loc_name, distance=50):
+    self.searchLocation(loc_name)
+    if self.LastJson['items']:
+        lat, lng = self.LastJson['items'][0]['location']['lat'], self.LastJson['items'][0]['location']['lng']
+        return get_list_locs_by_coords(self, lat, lng, distance_limit=distance)
+    
         
 def get_location_medias_from_coordinates(self, lat, lng, distance_limit=50):
     #проходим по всем локациям, собираем ВСЕ media
