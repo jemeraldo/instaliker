@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
-UNAME = "ggg"
-UPASS = "ggg"
+STOP_WORDS = ('shop', 'store', 'магазин', 'купить', 'заработок', 'аренда', 'заказать', 'доставка',
+                'бронирование')
+
+UNAME = "temaluck"
+UPASS = "laertsky"
 
 BLACKLIST_FILE = "blacklist.txt"  # List of the users you don't want to follow
 

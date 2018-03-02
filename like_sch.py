@@ -17,10 +17,8 @@ import like_medias_by_location2 as lmbloc
 #local config
 LIKE_RANDOM = False
 
-bot = Bot(comments_file=config.COMMENTS_FILE, blacklist=config.BLACKLIST_FILE, whitelist=config.WHITELIST_FILE,
-          stop_words=('shop', 'store', 'магазин', 'купить', 'заработок', 'аренда', 'заказать', 'доставка',
-                      'бронирование'))
-                      
+bot = Bot(comments_file=config.COMMENTS_FILE, blacklist=config.BLACKLIST_FILE, whitelist=config.WHITELIST_FILE, stop_words=config.STOP_WORDS)
+               
 bot.logger = logging.getLogger('[instabot]')
 bot.logger.setLevel(logging.DEBUG)
 logging.basicConfig(format='%(asctime)s - %(levelname)s - %(threadName)s: %(message)s',
@@ -32,7 +30,6 @@ ch.setLevel(logging.DEBUG)
 formatter = logging.Formatter(
     '%(asctime)s - %(levelname)s - %(threadName)s: %(message)s')
 ch.setFormatter(formatter)
-#bot.logger.addHandler(ch)
 
 bot.login(username=config.UNAME, password=config.UPASS)
 bot.logger.info("like by schedule script. 1 hour save")
@@ -71,7 +68,7 @@ def tema_hashtag():
 
 
 def tema_geotag():
-    amount = int(700 / 24 / 4)
+    amount = int(700 / 24 / 8)
     bot.logger.info("like_first_lication_feed started, amount = %s" % str(amount))
     if LIKE_RANDOM:
         loc = get_random(random_locations_file)
@@ -89,17 +86,17 @@ def run_threaded(job_fn):
     job_thread.start()
 
 
-init_counters(bot)
-schedule.every(30).minutes.do(run_threaded, stats)              # get stats
-schedule.every(30).minutes.do(run_threaded, tema_hashtag)              # like hashtag
-schedule.every(30).minutes.do(run_threaded, tema_geotag)              # like locations
+if __name__ == '__main__':
+    init_counters(bot)
+    schedule.every(15).minutes.do(run_threaded, stats)              # get stats
+    schedule.every(30).minutes.do(run_threaded, tema_hashtag)              # like hashtag
+    schedule.every(15).minutes.do(run_threaded, tema_geotag)              # like locations
 
-run_threaded(tema_hashtag)
-run_threaded(tema_geotag)
+    run_threaded(tema_hashtag)
+    run_threaded(tema_geotag)
 
-#tema_hashtag()
-#tema_geotag()
 
-while True:
-    schedule.run_pending()
-    time.sleep(1)
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
+
