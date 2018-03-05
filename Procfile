@@ -1,1 +1,1 @@
-worker: python like_sch.py
+worker: python projects.py

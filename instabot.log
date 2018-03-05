@@ -322,3 +322,176 @@
 2018-03-02 16:33:26,302 Instabot Started
 2018-03-02 16:33:29,153 Login success as temaluck!
 2018-03-02 16:33:31,768 grab location medias script starts
+2018-03-02 22:02:00,480 Instabot Started
+2018-03-02 22:02:08,092 Login success as temaluck!
+2018-03-02 22:02:10,435 grab location medias script starts
+2018-03-02 22:07:08,398 Bot stopped. Worked: 2 days, 1:59:32.303027
+2018-03-02 22:07:08,400 Total liked: 36
+2018-03-02 22:07:08,403 Total requests: 94
+2018-03-02 22:07:10,597 Instabot Started
+2018-03-02 22:07:12,356 Login success as temaluck!
+2018-03-02 22:07:14,858 grab location medias script starts
+2018-03-04 20:53:51,178 - INFO - MainThread: Instabot Started
+2018-03-04 20:54:27,707 - INFO - MainThread: Instabot Started
+2018-03-04 20:56:50,917 - INFO - MainThread: Instabot Started
+2018-03-04 20:56:52,776 - INFO - MainThread: Login success as temaluck!
+2018-03-04 20:56:52,798 - INFO - MainThread: Found whitelist: whitelist.txt (1 users)
+2018-03-04 20:56:54,465 - INFO - MainThread: Project temaluck bot started
+2018-03-04 20:58:11,219 - INFO - Dummy-1: Bot stopped. Worked: 4 days, 0:50:35.123629
+2018-03-04 20:58:11,220 - INFO - Dummy-1: Total liked: 36
+2018-03-04 20:58:11,221 - INFO - Dummy-1: Total requests: 95
+2018-03-04 20:58:12,496 - INFO - MainThread: Instabot Started
+2018-03-04 20:58:14,034 - INFO - MainThread: Login success as temaluck!
+2018-03-04 20:58:14,037 - INFO - MainThread: Found whitelist: whitelist.txt (1 users)
+2018-03-04 20:58:15,241 - INFO - MainThread: Project temaluck bot started
+2018-03-04 20:58:20,249 - INFO - MainThread: Instabot Started
+2018-03-04 20:58:22,305 - INFO - MainThread: Login success as woodentrend!
+2018-03-04 20:58:22,307 - INFO - MainThread: Found whitelist: whitelist.txt (1 users)
+2018-03-04 20:58:23,642 - INFO - MainThread: Project woodentrend bot started
+2018-03-04 20:59:25,480 - DEBUG - MainThread: test
+2018-03-04 20:59:35,921 - INFO - MainThread: test
+2018-03-04 21:00:15,359 - INFO - Dummy-1: Bot stopped. Worked: 0:01:55.115105
+2018-03-04 21:00:15,360 - INFO - Dummy-1: Total requests: 4
+2018-03-04 21:00:16,233 - INFO - Dummy-1: Bot stopped. Worked: 4 days, 0:52:40.137841
+2018-03-04 21:00:16,234 - INFO - Dummy-1: Total liked: 36
+2018-03-04 21:00:16,234 - INFO - Dummy-1: Total requests: 96
+2018-03-04 21:00:17,296 - INFO - MainThread: Instabot Started
+2018-03-04 21:00:19,679 - INFO - MainThread: Login success as temaluck!
+2018-03-04 21:00:19,683 - INFO - MainThread: Found whitelist: whitelist.txt (1 users)
+2018-03-04 21:00:21,075 - INFO - MainThread: Project temaluck bot started
+2018-03-04 21:00:26,084 - INFO - MainThread: Instabot Started
+2018-03-04 21:00:27,810 - INFO - MainThread: Login success as woodentrend!
+2018-03-04 21:00:27,813 - INFO - MainThread: Found whitelist: whitelist.txt (1 users)
+2018-03-04 21:00:29,697 - INFO - MainThread: Project woodentrend bot started
+2018-03-05 14:41:17,926 - INFO - MainThread: Instabot Started
+2018-03-05 14:41:20,517 - INFO - MainThread: Login success as temaluck!
+2018-03-05 14:41:20,540 - INFO - MainThread: Found whitelist: whitelist.txt (1 users)
+2018-03-05 14:41:22,052 - INFO - MainThread: Project temaluck bot started, jobs: [<bound method Project.like_hashtag_feed_job of <__main__.Project object at 0x03EBE5F0>>, <bound method Project.like_geotag_feed_job of <__main__.Project object at 0x03EBE5F0>>]
+2018-03-05 14:41:52,437 - INFO - Dummy-1: Bot stopped. Worked: 4 days, 18:34:16.341979
+2018-03-05 14:41:52,440 - INFO - Dummy-1: Total liked: 36
+2018-03-05 14:41:52,441 - INFO - Dummy-1: Total requests: 97
+2018-03-05 14:41:53,536 - INFO - MainThread: Instabot Started
+2018-03-05 14:41:56,116 - INFO - MainThread: Login success as temaluck!
+2018-03-05 14:41:56,120 - INFO - MainThread: Found whitelist: whitelist.txt (1 users)
+2018-03-05 14:41:57,631 - INFO - MainThread: Project temaluck bot started, jobs: [<bound method Project.like_hashtag_feed_job of <__main__.Project object at 0x042CE5D0>>, <bound method Project.like_geotag_feed_job of <__main__.Project object at 0x042CE5D0>>]
+2018-03-05 14:42:42,428 - INFO - Dummy-1: Bot stopped. Worked: 4 days, 18:35:06.333415
+2018-03-05 14:42:42,430 - INFO - Dummy-1: Total liked: 36
+2018-03-05 14:42:42,432 - INFO - Dummy-1: Total requests: 98
+2018-03-05 14:42:43,730 - INFO - MainThread: Instabot Started
+2018-03-05 14:42:45,902 - INFO - MainThread: Login success as temaluck!
+2018-03-05 14:42:45,906 - INFO - MainThread: Found whitelist: whitelist.txt (1 users)
+2018-03-05 14:42:47,105 - INFO - MainThread: Project temaluck bot started, jobs: [<bound method Project.like_hashtag_feed_job of <__main__.Project object at 0x03DBE5D0>>, <bound method Project.like_geotag_feed_job of <__main__.Project object at 0x03DBE5D0>>]
+2018-03-05 14:42:47,115 - INFO - Thread-1: like_hashtag started, amount = 7
+2018-03-05 14:42:47,117 - INFO - Thread-2: like_first_lication_feed started, amount = 3
+2018-03-05 14:42:47,117 - INFO - Thread-1: Going to like media with hashtag #бали.
+2018-03-05 14:42:47,119 - INFO - Thread-2: Looking for location >>> get_list_nearest_locs(bot, 'васька')
+2018-03-05 14:42:47,714 - INFO - Thread-2: >>> get_list_nearest_locs(bot, 'васька') not found
+2018-03-05 14:42:47,715 - INFO - Thread-2: like_first_lication_feed job done
+2018-03-05 14:42:50,770 - INFO - Thread-1: Received 61 medias.
+2018-03-05 14:42:50,771 - INFO - Thread-1: After filtration 55 medias left.
+2018-03-05 14:42:50,772 - INFO - Thread-1: Going to like 7 medias.
+2018-03-05 14:42:52,130 - INFO - MainThread: Instabot Started
+2018-03-05 14:42:54,556 - INFO - MainThread: Login success as woodentrend!
+2018-03-05 14:42:54,570 - INFO - MainThread: Found whitelist: whitelist.txt (1 users)
+2018-03-05 14:42:56,312 - INFO - MainThread: Project woodentrend bot started, jobs: [<bound method Project.like_geotag_feed_job of <__main__.Project object at 0x03DDAF10>>]
+2018-03-05 14:42:56,330 - INFO - Thread-4: like_first_lication_feed started, amount = 4
+2018-03-05 14:42:56,331 - INFO - Thread-4: Looking for location >>> get_list_nearest_locs(bot, 'васька')
+2018-03-05 14:42:56,906 - INFO - Thread-4: >>> get_list_nearest_locs(bot, 'васька') not found
+2018-03-05 14:42:56,908 - INFO - Thread-4: like_first_lication_feed job done
+2018-03-05 14:43:49,602 - INFO - Thread-1: DONE: Total liked 7 medias.
+2018-03-05 14:43:49,604 - INFO - Thread-1: like_hashtag job done
+2018-03-05 14:45:52,396 - INFO - Dummy-5: Bot stopped. Worked: 17:47:32.152154
+2018-03-05 14:45:52,398 - INFO - Dummy-5: Total requests: 6
+2018-03-05 14:45:52,880 - INFO - Dummy-5: Bot stopped. Worked: 0:03:02.104523
+2018-03-05 14:45:52,882 - INFO - Dummy-5: Total liked: 7
+2018-03-05 14:45:52,885 - INFO - Dummy-5: Total requests: 108
+2018-03-05 14:45:57,618 - INFO - MainThread: Instabot Started
+2018-03-05 14:46:00,200 - INFO - MainThread: Login success as temaluck!
+2018-03-05 14:46:00,203 - INFO - MainThread: Found whitelist: whitelist.txt (1 users)
+2018-03-05 14:46:01,835 - INFO - MainThread: Project temaluck bot started, jobs: [<bound method Project.like_hashtag_feed_job of <__main__.Project object at 0x03AEE610>>, <bound method Project.like_geotag_feed_job of <__main__.Project object at 0x03AEE610>>]
+2018-03-05 14:46:01,846 - INFO - Thread-1: like_hashtag started, amount = 7
+2018-03-05 14:46:01,847 - INFO - Thread-2: like_first_lication_feed started, amount = 3
+2018-03-05 14:46:01,848 - INFO - Thread-1: Going to like media with hashtag #бали.
+2018-03-05 14:46:01,850 - INFO - Thread-2: Looking for location >>> get_list_nearest_locs(bot, 'васька')
+2018-03-05 14:46:02,375 - INFO - Thread-2: >>> get_list_nearest_locs(bot, 'васька') not found
+2018-03-05 14:46:02,376 - INFO - Thread-2: like_first_lication_feed job done
+2018-03-05 14:46:05,791 - INFO - Thread-1: Received 61 medias.
+2018-03-05 14:46:05,792 - INFO - Thread-1: After filtration 50 medias left.
+2018-03-05 14:46:05,793 - INFO - Thread-1: Going to like 7 medias.
+2018-03-05 14:46:06,859 - INFO - MainThread: Instabot Started
+2018-03-05 14:46:08,844 - INFO - MainThread: Login success as woodentrend!
+2018-03-05 14:46:08,851 - INFO - MainThread: Found whitelist: whitelist.txt (1 users)
+2018-03-05 14:47:21,595 - INFO - MainThread: Instabot Started
+2018-03-05 14:47:23,992 - INFO - MainThread: Login success as temaluck!
+2018-03-05 14:47:23,996 - INFO - MainThread: Found whitelist: whitelist.txt (1 users)
+2018-03-05 14:47:25,620 - INFO - MainThread: Project temaluck bot started, jobs: [<bound method Project.like_hashtag_feed_job of <__main__.Project object at 0x0397E5F0>>, <bound method Project.like_geotag_feed_job of <__main__.Project object at 0x0397E5F0>>]
+2018-03-05 14:47:25,626 - INFO - Thread-1: like_hashtag started, amount = 7
+2018-03-05 14:47:25,628 - INFO - Thread-2: like_first_lication_feed started, amount = 3
+2018-03-05 14:47:25,628 - INFO - Thread-1: Going to like media with hashtag #бали.
+2018-03-05 14:47:25,629 - INFO - Thread-2: Looking for location General Staff Building
+2018-03-05 14:47:26,198 - INFO - Thread-2: Found General Staff Building
+2018-03-05 14:47:28,439 - INFO - Thread-1: Received 60 medias.
+2018-03-05 14:47:28,441 - INFO - Thread-1: After filtration 43 medias left.
+2018-03-05 14:47:28,441 - INFO - Thread-1: Going to like 7 medias.
+2018-03-05 14:47:30,632 - INFO - MainThread: Instabot Started
+2018-03-05 14:47:32,919 - INFO - MainThread: Login success as woodentrend!
+2018-03-05 14:47:32,921 - INFO - MainThread: Found whitelist: whitelist.txt (1 users)
+2018-03-05 14:47:34,161 - INFO - MainThread: Project woodentrend bot started, jobs: [<bound method Project.like_geotag_feed_job of <__main__.Project object at 0x0399AF30>>]
+2018-03-05 14:47:34,165 - INFO - Thread-4: like_first_lication_feed started, amount = 4
+2018-03-05 14:47:34,167 - INFO - Thread-4: Looking for location General Staff Building
+2018-03-05 14:47:35,188 - INFO - Thread-4: Found General Staff Building
+2018-03-05 14:47:49,085 - INFO - Thread-2: like_first_lication_feed job done
+2018-03-05 14:48:09,870 - INFO - Thread-4: like_first_lication_feed job done
+2018-03-05 14:48:39,133 - INFO - Thread-1: DONE: Total liked 17 medias.
+2018-03-05 14:48:39,135 - INFO - Thread-1: like_hashtag job done
+2018-03-05 14:53:49,949 - INFO - Dummy-5: Bot stopped. Worked: 0:10:59.174008
+2018-03-05 14:53:49,951 - INFO - Dummy-5: Total liked: 17
+2018-03-05 14:53:49,953 - INFO - Dummy-5: Total requests: 122
+2018-03-05 14:53:52,404 - INFO - MainThread: Instabot Started
+2018-03-05 14:53:55,017 - INFO - MainThread: Login success as temaluck!
+2018-03-05 14:53:55,021 - INFO - MainThread: Found whitelist: whitelist.txt (1 users)
+2018-03-05 14:53:56,262 - INFO - MainThread: Project temaluck bot started, jobs: [<bound method Project.like_hashtag_feed_job of <__main__.Project object at 0x03E4E670>>, <bound method Project.like_geotag_feed_job of <__main__.Project object at 0x03E4E670>>, <bound method Project.save_stats_job of <__main__.Project object at 0x03E4E670>>]
+2018-03-05 14:53:56,273 - INFO - Thread-1: like_hashtag started, amount = 7
+2018-03-05 14:53:56,274 - INFO - Thread-2: like_first_lication_feed started, amount = 3
+2018-03-05 14:53:56,275 - INFO - Thread-1: Going to like media with hashtag #бали.
+2018-03-05 14:53:56,281 - INFO - Thread-2: Looking for location General Staff Building
+2018-03-05 14:53:56,904 - INFO - Thread-2: Found General Staff Building
+2018-03-05 14:53:59,796 - INFO - Thread-1: Received 59 medias.
+2018-03-05 14:53:59,800 - INFO - Thread-1: After filtration 36 medias left.
+2018-03-05 14:53:59,802 - INFO - Thread-1: Going to like 7 medias.
+2018-03-05 14:54:01,281 - INFO - MainThread: Instabot Started
+2018-03-05 14:54:03,787 - INFO - MainThread: Login success as woodentrend!
+2018-03-05 14:54:03,789 - INFO - MainThread: Found whitelist: whitelist.txt (1 users)
+2018-03-05 14:54:05,063 - INFO - MainThread: Project woodentrend bot started, jobs: [<bound method Project.like_hashtag_feed_job of <__main__.Project object at 0x03E6CFB0>>, <bound method Project.like_geotag_feed_job of <__main__.Project object at 0x03E6CFB0>>, <bound method Project.save_stats_job of <__main__.Project object at 0x03E6CFB0>>]
+2018-03-05 14:54:05,069 - INFO - Thread-4: like_hashtag started, amount = 4
+2018-03-05 14:54:05,075 - INFO - Thread-5: like_first_lication_feed started, amount = 4
+2018-03-05 14:54:05,075 - INFO - Thread-4: Going to like media with hashtag #бали.
+2018-03-05 14:54:05,077 - INFO - Thread-5: Looking for location General Staff Building
+2018-03-05 14:54:06,697 - INFO - Thread-5: Found General Staff Building
+2018-03-05 14:54:09,137 - INFO - Thread-4: Received 57 medias.
+2018-03-05 14:54:09,138 - INFO - Thread-4: After filtration 54 medias left.
+2018-03-05 14:54:09,139 - INFO - Thread-4: Going to like 4 medias.
+2018-03-05 14:54:29,806 - INFO - Thread-2: like_first_lication_feed job done
+2018-03-05 14:54:35,166 - INFO - Thread-4: DONE: Total liked 10 medias.
+2018-03-05 14:54:35,167 - INFO - Thread-4: like_hashtag job done
+2018-03-05 14:54:49,173 - INFO - Thread-5: like_first_lication_feed job done
+2018-03-05 14:55:47,412 - INFO - MainThread: Instabot Started
+2018-03-05 14:55:49,245 - INFO - MainThread: Login success as temaluck!
+2018-03-05 14:55:49,249 - INFO - MainThread: Found whitelist: whitelist.txt (1 users)
+2018-03-05 14:55:50,850 - INFO - MainThread: Project temaluck bot started, jobs: [<bound method Project.like_hashtag_feed_job of <__main__.Project object at 0x03B3E670>>, <bound method Project.like_geotag_feed_job of <__main__.Project object at 0x03B3E670>>, <bound method Project.save_stats_job of <__main__.Project object at 0x03B3E670>>]
+2018-03-05 14:55:50,856 - INFO - Thread-1: like_hashtag started, amount = 7
+2018-03-05 14:55:50,858 - INFO - Thread-2: like_first_lication_feed started, amount = 3
+2018-03-05 14:55:50,858 - INFO - Thread-1: Going to like media with hashtag #бали.
+2018-03-05 14:55:50,859 - INFO - Thread-2: Looking for location General Staff Building
+2018-03-05 14:55:51,402 - INFO - Thread-2: Found General Staff Building
+2018-03-05 14:55:53,908 - INFO - Thread-1: Received 56 medias.
+2018-03-05 14:55:53,910 - INFO - Thread-1: After filtration 28 medias left.
+2018-03-05 14:55:53,910 - INFO - Thread-1: Going to like 7 medias.
+2018-03-05 14:55:55,861 - INFO - MainThread: Instabot Started
+2018-03-05 14:55:58,093 - INFO - MainThread: Login success as woodentrend!
+2018-03-05 14:55:58,096 - INFO - MainThread: Found whitelist: whitelist.txt (1 users)
+2018-03-05 14:55:59,666 - INFO - MainThread: Project woodentrend bot started, jobs: [<bound method Project.like_geotag_feed_job of <__main__.Project object at 0x03B5CFB0>>, <bound method Project.save_stats_job of <__main__.Project object at 0x03B5CFB0>>]
+2018-03-05 14:55:59,676 - INFO - Thread-4: like_first_lication_feed started, amount = 4
+2018-03-05 14:55:59,677 - INFO - Thread-4: Looking for location General Staff Building
+2018-03-05 14:56:00,551 - INFO - Thread-4: Found General Staff Building
+2018-03-05 14:56:26,450 - INFO - Thread-2: like_first_lication_feed job done
