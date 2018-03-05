@@ -138,3 +138,7 @@ if __name__=='__main__':
     for proj in projects:
         proj.startBot()
         time.sleep(project_delay)
+        
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
