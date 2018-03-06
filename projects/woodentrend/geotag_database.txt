@@ -6,7 +6,6 @@ Zenit Football Club
 Taleon Imperial Hotel
 Bank Bridge
 Avtovo
-Exness
 Санкт-Петербургский театр Музыкальной комедии
 Александринский театр и Новая сцена
 Приколы Всероссийский клуб любителей комфорта
@@ -61,18 +60,13 @@ Social Club
 Solo Sokos Hotel Palace Bridge
 Yubileyny Sports Palace
 Petrodvorets
-Sertolovo
 Street Art Museum / Музей уличного искусства
-Toksovo
 Rashen-MAROC
-Токсово
-Kuzmolovskiy
 НЭНСИ
 Neva River
 Baltika
 جامعة سانت بطرس برغ الحكومية - St.petersburg university
 Rakhya
-Sestroretsk
 Mariinsky Theatre
 Petrogradskaya
 Saint Petersburg Botanical Garden
@@ -80,7 +74,6 @@ Russian cruiser Aurora
 BeefZavod
 Паруса на крыше
 ТРК Европолис
-First Pavlov State Medical University of St. Petersburg
 Painty
 Chyornaya Rechka
 Saint Petersburg Mosque
@@ -107,17 +100,12 @@ Park Inn by Radisson Pulkovskaya
 Ресторан «Этаж 41»
 Moskovskaya (Saint Petersburg Metro)
 Zvyozdnaya
-Outlet Village Pulkovo
-Пулково-1
 Moskovsky District
 Grand Capital Ltd
 Park Pobedy (Saint Petersburg Metro)
 ТРК ЛЕТО
 Prospekt Veteranov
 Театр "Мюзик-Холл"
-Красное Село
-Авиакомпания "Россия" / Rossiya Airlines
-Горелово
 Кафе "Зингеръ"
 Tovstonogov Bolshoi Drama Theater
 Стадион Санкт-Петербург - St. Petersburg Stadium
@@ -127,15 +115,12 @@ Moskovsky railway station
 Сули Гули Ginza Project
 Holiday Inn St. Petersburg Moskovskye Vorota
 МЕГА Санкт-Петербург
-Geek Picnic
 Corinthia Hotel St Petersburg
-Kolpino
 Kalininsky District
 Fabergé Museum in Saint Petersburg
 Екатерининский парк
 Kupchino
 Catherine Palace
-Vsevolozhsk
 Nevsky Prospekt
 Государственный Эрмитаж. The State Hermitage museum. Official page.
 Imperial Porcelain Factory
@@ -147,18 +132,12 @@ Nevsky District
 Nevsky Prospect
 Ice Palace
 IKEA
-Kronstadt
 Peter and Paul Fortress
 Ресторанная группа SEVEN
 Санкт–Петербург
 Krestovsky Island
-Tsarskoye Selo
-Звёздное
 Лофт Проект ЭТАЖИ
-Gatchina
-Peterhof
 Центральный выставочный зал "Манеж"
-Pulkovo Airport St. Petersburg
 Proletarskaya (Saint Petersburg Metro)
 BP Шафировский
 Lomonosovskaya
@@ -173,7 +152,6 @@ Church of the Savior on Blood
 Volodarsky Bridge
 BP Софийская
 Kazan Cathedral
-Парголово
 Saint Isaac's Cathedral
 New Holland Island
 Ресторан terrassa
@@ -184,4 +162,3 @@ Peter the Great St.Petersburg Polytechnic University
 Palace Square
 Музей Эрарта / Erarta Museum
 Vaganova Academy of Russian Ballet
-Репино

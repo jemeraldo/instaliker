@@ -28,7 +28,6 @@ Petrogradsky District
 XXXX Bar
 Peter and Paul Fortress
 Ресторан "Москва"
-Lakhta
 Ресторан «Корюшка»
 Александринский театр и Новая сцена
 Sennaya Square
@@ -64,7 +63,6 @@ Four Seasons Hotel Lion Palace St. Petersburg
 Питер
 Ice Palace
 Гранд Макет
-Kronstadt
 Galeria в Петербурге
 Yubileyny Sports Palace
 Ресторан «Мансарда»
