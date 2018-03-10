@@ -2,8 +2,8 @@
 STOP_WORDS = ('shop', 'store', 'магазин', 'купить', 'заработок', 'аренда', 'заказать', 'доставка',
                 'бронирование')
 
-UNAME = "temaluck"
-UPASS = "laertsky"
+UNAME = "111"
+UPASS = "111"
 
 BLACKLIST_FILE = "blacklist.txt"  # List of the users you don't want to follow
 
